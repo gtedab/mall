@@ -35,10 +35,10 @@
 					<a href="/mall/member/addMemberForm.jsp">회원가입</a>
 				</li>
 				<li>
-					<i class="fas fa-thumbs-up"></i><a href="/mall/member/loginForm.jsp">로그인</a>
+					<a href="/mall/member/loginForm.jsp">로그인</a>
 				</li>
 				<li>
-					<a href="/mall/item/addItemForm.jsp">상품등록</a>
+					<i class="fas fa-thumbs-up"></i><a href="/mall/item/addItemForm.jsp">상품등록</a>
 				</li>
 				<li>
 					<a href="/mall/board/addBoardForm.jsp">게시글등록</a>
@@ -46,20 +46,47 @@
 			</ul>
 			</div>
 			<div class="con-sm-9">
-				<h1>로그인 폼</h1>		
-				<form id="login-form">
-                    <div>
-                        <input type="text" class="form-control" name="username" placeholder="Username" autofocus>
-                    </div>
-                    <div>
-                        <input type="password" class="form-control" name="password" placeholder="Password">
-                    </div>
-                    <div>
-                        <button type="submit" class="form-control btn btn-primary">로그인</button>
-                    </div>
-                </form>
+				<h1>상품등록 폼</h1>
+				<form role="form" method="post" autocomplete="off">
+					<div class="inputArea"> 
+ 						<label>1차 분류</label>
+ 						<select class="category1">
+  						<option value="">전체</option>
+ 						</select>
+
+ 						<label>2차 분류</label>
+ 						<select class="category2" name="cateCode">
+  						<option value="">전체</option>
+ 						</select>
+						</div>
+
+						<div class="inputArea">
+ 						<label for="gdsName">상품명</label>
+ 						<input type="text" id="gdsName" name="gdsName" />
+						</div>
+
+						<div class="inputArea">
+ 						<label for="gdsPrice">상품가격</label>
+ 						<input type="text" id="gdsPrice" name="gdsPrice" />
+						</div>
+
+						<div class="inputArea">
+ 						<label for="gdsStock">상품수량</label>
+ 						<input type="text" id="gdsStock" name="gdsStock" />
+						</div>
+
+						<div class="inputArea">
+ 						<label for="gdsDes">상품소개</label>
+ 						<textarea rows="5" cols="50" id="gdsDes" name="gdsDes"></textarea>
+						</div>
+
+						<div class="inputArea">
+ 						<button type="submit" id="register_Btn" class="btn btn-primary">등록</button>
+						</div>
+
+				</form>
+			</div>
 		</div>
-	</div>
 	</div>
 </body>
 </html>
