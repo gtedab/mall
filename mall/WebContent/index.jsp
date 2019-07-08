@@ -6,6 +6,7 @@
 <meta charset="EUC-KR">
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 <style>
 	.sidebar-bg {
 		background: gray;
@@ -28,11 +29,14 @@
 			<div class="col-sm-3 sidebar-bg">
 			<ul>
 				<li>
-					<a href="/mall/index.jsp">홈으로</a>
+					<i class="fas fa-thumbs-up"></i><a href="/mall/index.jsp">홈으로</a>
+				</li>
+				<li>
+					<a href="/mall/member/addMemberForm.jsp">회원가입</a>
 				</li>
 			</ul>
 			</div>
-			<div class="con-sm-8"></div>
+			<div class="con-sm-9"></div>
 				<div class="jumbotron">
   					<h1>Hello My Mall</h1> 
   					<p>우리 쇼핑몰은...</p> 
