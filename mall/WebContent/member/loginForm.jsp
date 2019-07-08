@@ -29,13 +29,13 @@
 			<div class="col-sm-3 sidebar-bg">
 			<ul>
 				<li>
-					<i class="fas fa-thumbs-up"></i><a href="/mall/index.jsp">홈으로</a>
+					<a href="/mall/index.jsp">홈으로</a>
 				</li>
 				<li>
 					<a href="/mall/member/addMemberForm.jsp">회원가입</a>
 				</li>
 				<li>
-					<a href="/mall/member/loginForm.jsp">로그인</a>
+					<i class="fas fa-thumbs-up"></i><a href="/mall/member/loginForm.jsp">로그인</a>
 				</li>
 				<li>
 					<a href="/mall/item/addItemForm.jsp">상품등록</a>
@@ -46,10 +46,18 @@
 			</ul>
 			</div>
 			<div class="con-sm-9"></div>
-				<div class="jumbotron">
-  					<h1>Hello My Mall</h1> 
-  					<p>우리 쇼핑몰은...</p> 
-</div>
+				<h1>로그인 폼</h1>		
+				<form id="login-form">
+                    <div>
+                        <input type="text" class="form-control" name="username" placeholder="Username" autofocus>
+                    </div>
+                    <div>
+                        <input type="password" class="form-control" name="password" placeholder="Password">
+                    </div>
+                    <div>
+                        <button type="submit" class="form-control btn btn-primary">로그인</button>
+                    </div>
+                </form>
 		</div>
 	
 	</div>
